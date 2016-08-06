@@ -26,3 +26,46 @@ Things you may want to cover:
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+
+
+               JUST GOING TO BE NOTES
+
+    GIT INFO 
+    to setup the details we put 
+    git config --global user.name "Whatever name"
+    git config --global user.email "gracianerick@yahoo.com"
+
+    git config --list will give you all the info 
+
+    git init then  starts up git 
+
+
+    git add -A starts to track all of the files 
+
+    git status then shows you all of the files
+
+
+    git commit -m "message"  then allows you to commit all of the changes with a message that you can add
+
+    the gitignore file shows everything that git ignores
+
+    rm -rf "insert file" is a git commmand that deletes any file that you insert 
+
+    git checkout -f undoes all of the changes that you made to the project
+
+
+     cat ~/.ssh/id_rsa.pub , this command will display your unique ssh key 
+
+     a next step for when entering in the github 
+     1. add the ssh key 
+     2. then name and save and also grab the command under the 'or push an existing repository from the command line' line 
+
+     in this case the command was 'git remote add origin git@github.com:Erick562/Actual-Try-.git' 
+     to check if the command was recieved tpye in 'git remote -v ' into the command line 
+
+     then i typed in 'git push -u origin master' to finish it off
+#
+#
+#
+#
+#
