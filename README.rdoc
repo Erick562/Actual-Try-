@@ -119,6 +119,9 @@ Please feel free to use a different markup language if you do not plan to run
         from what ive read the "params" arg whitelist the instance of an instance variable
 
         when you rake routes certain routes ask for the id which meand to pass in the params and attributes which usaully comes in the form of an instance variable
+
+
+        i used a code block to get all the error messages and then displayed them in a list manner 
 #
 #
 #
