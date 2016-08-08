@@ -64,6 +64,61 @@ Please feel free to use a different markup language if you do not plan to run
      to check if the command was recieved tpye in 'git remote -v ' into the command line 
 
      then i typed in 'git push -u origin master' to finish it off
+
+     finally the tada! moment is that 'git push' is the ultimate command that pushes everything to the reposirty 
+
+
+      OK ONTO A MIGRATION FILE FACT 
+      when you mess up and forget to have a feature on a table like description.text 
+      you instead make another table called add_description_to_ect 
+      and inside you put 'add_column :articles, :description, :text'
+      as you may notice first the location then the name and last the type 
+      of object that it is 
+
+
+      ALSO 
+      the schema.rb holds all of the tables that you have created 
+
+      models inheret from ActiveRecord::Base 
+
+
+      you add validations in the models 
+      you can validate the lenght, presence etc 
+      validations look a little something like ... 
+
+      validates :title, precense: true, length: { minimum: 20, maximum: 30}  
+      the hash at the end is seperated by "key:value" and you use it when you want to add info that isn't 
+      going to change according to the book 
+
+      UI stands for User INterface which means when you puth the code that allows the user to interact with the database 
+
+
+      just a little quick overview of what i just learned that we have been struggling in ..
+
+      when you create a  new form that a user will submit you direct it to the new controller 
+      and then when the user clicks submit it gets directed to the create controller 
+
+      so the create controller is going to have to take the attributes of the title and description nd whitelist them 
+      which was introduced in rails 4 and once they are whitelisted the create action is going to have to create a new instance variable 
+      with the article and description values and then its going to see the validations and if it passes the validations then it is going to hit the database but if it doesnt pass the validations then it will flash an error message within the same controller and then redirect 
+
+        TYING THE VIEW FILES TO THE MODELS SO THAT DATA CAN BE TRANSFERRED( WHAT I HAVE BEEN STRUGGLING WITH THE MOST)
+
+        ok so "form_helpers" are provided by rails and are blocks that create forms and in those form transfer data 
+
+        remember that when you create a model you also create a corresponding controller that reacts by naminf convention so as 
+        long as you name the controller correctly then your good 
+
+        and in the controller you put a new action which responds to a new view where we put 
+
+        "form_for @whatever" which transefers the instance variable that you have to define in the new action 
+        across the block of code
+
+        the create action does not require a template 
+
+        from what ive read the "params" arg whitelist the instance of an instance variable
+
+        when you rake routes certain routes ask for the id which meand to pass in the params and attributes which usaully comes in the form of an instance variable
 #
 #
 #

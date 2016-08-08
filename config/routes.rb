@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   get 'about', to: 'pages#about' #changed this from the one that was generated
 
+  resources :articles #added this by ourselves to get all the routes from creating,deleting, showing etc
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
