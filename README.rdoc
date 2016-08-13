@@ -139,6 +139,10 @@ Please feel free to use a different markup language if you do not plan to run
 
 
         YEAH!! is sloved an error on the index page on line 14 <td><%= link_to 'edit', edit_article_path(article) %> by passing in the article when it asked that it needed the key to be passed in..
+
+
+        you can also reduce repetition by defining a method like find params id etc.. and include it to avoid uneccessaryly long code BUT another way to do that is to write ..
+        before_action :set_article, only: [:edit, :update, :show, :destroy]
 #
 #
 #
