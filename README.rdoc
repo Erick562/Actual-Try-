@@ -122,6 +122,23 @@ Please feel free to use a different markup language if you do not plan to run
 
 
         i used a code block to get all the error messages and then displayed them in a list manner 
+
+        Routing options are passed in the :url hash
+
+        HTML options are passed in the :html hash
+
+        the forms in rails that take data to the database require authenticity tokens, since i realized that the form helers create
+        html for the tags and they wont let you sumbit without the security token
+
+        never iunderestiimate the intellegince of ruby on rails, when you created the edit page, rails automatically prefilles the 
+        boxes with the article you asked for and relabeled the submit button into update article which is actually pretty trippy xD
+
+
+        apparnetly you can name the article instance variables slightly differntly on every action, since steve did it in udemy 
+        but research into it more...
+
+
+        YEAH!! is sloved an error on the index page on line 14 <td><%= link_to 'edit', edit_article_path(article) %> by passing in the article when it asked that it needed the key to be passed in..
 #
 #
 #
