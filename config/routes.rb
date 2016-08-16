@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
-  root 'pages#home'#apperantly for root the hash has to be there
 
-  get 'about', to: 'pages#about' #changed this from the one that was generated
-  get 'home', to: 'pages#home'
+
  
+
+  get 'pages/home'# before when it was not working i had, get 'home', to: 'pages#home' SMH -_-
+
+  get 'pages/about'
 
   resources :articles #added this by ourselves to get all the routes from creating,deleting, showing etc
 

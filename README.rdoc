@@ -143,6 +143,10 @@ Please feel free to use a different markup language if you do not plan to run
 
         you can also reduce repetition by defining a method like find params id etc.. and include it to avoid uneccessaryly long code BUT another way to do that is to write ..
         before_action :set_article, only: [:edit, :update, :show, :destroy]
+
+        kinda skipping alot of the styling videos
+
+        apparenetly from what i saw the body tag determines the color of the whole page overall
 #
 #
 #
