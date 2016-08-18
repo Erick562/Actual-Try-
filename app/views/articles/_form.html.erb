@@ -8,19 +8,61 @@
 </ul>
 <% end %>
 
-<%=form_for @article do |f| %>
-<p>
-	<%= f.label :title %>
-	<%= f.text_field :title%>
-</p>
-<p>
+<style>
+   
+   ul {
+   	list-style-type: none;
+   }
+
+</style>
+<div class="row">
+	<div class="col-xs-12">
+<%=form_for(@article, :html => {class: "form-horizontal", role: "form"}) do |f| %><!--space inbetween form_for & @article actually caused an issue-->
+<div class="form-group">
+	<div class="control-label col-sm-2">
+		<%= f.label :title %>
+</div>
+<div class="col-sm-8">
+	<%= f.text_field :title, class: "form-control", placeholder: "Title of Article", autofocus: true %><!--notice autofocus -->
+</div>
+<br>
+<br>
+<br><!--added the br tags to fix that they were too close -->
+<div class="form-group">
+	<div class="control-label col-sm-2">
 	<%= f.label :description %>
-	<%= f.text_area :description %>
+</div>
 
-</p>
-<%= f.submit %>
+<div class="col-sm-8">
+	<%= f.text_area :description,rows: 10, class:"form-control", placeholder: "Body of Article"%>
+</div>
+</div>
+    <div class="form-group">
+    	<div class="col-sm-offset-2 col-sm-10">
+    <%= f.submit class: "btn btn-primary btn-lg" %>
+</div>
+</div>
 <% end %>
+<div class="col-xs-4 col-xs-offset-4">
+[ <%= link_to "Cancel request and go back to Articles Listing", articles_path %> ]
+</div>
+</div>
+</div>
 
-<%= link_to "Go back to articles page", articles_path %>
+
+
+
+
+<!--When the autofocus attribute is present, the INPUT, TEXTAREA, or BUTTON element is automatically selected upon page load. I experimented with display elements (H1 tag) and a tabIndex of 0, but autofocus did not work for them.
+
+This attribute is especially useful on pages whose main purpose is collecting information, like Google's homepage (search is the use 99% of the time) or even an online guided installer (like WordPress' installer). And best of all  no JavaScript needed!-->
+
+
+<!-- col-sm-offset-'whatever number' reduces the primary set col by what ever you specifiy-->
+
+
+
+
+
 
 

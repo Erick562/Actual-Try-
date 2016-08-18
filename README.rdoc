@@ -147,6 +147,11 @@ Please feel free to use a different markup language if you do not plan to run
         kinda skipping alot of the styling videos
 
         apparenetly from what i saw the body tag determines the color of the whole page overall
+
+        form_for tags automatically create authenticity tokens
+
+        the way to puts a bootstrap class into embedded ruby is by putting class: "whatever class"
+        placeholder: title ...... allows you to put the title of the bootstrap within the embeded ruby 
 #
 #
 #
