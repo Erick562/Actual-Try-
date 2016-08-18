@@ -1,20 +1,4 @@
-<% if @article.errors.any? %>
-<h2 align = "center"> The following errors prevented the article from being created</h2>
-<ul align = "center">
-<% @article.errors.full_messages.each do |msg| %>
-<li><%= msg %> </li>
-
-<% end %>
-</ul>
-<% end %>
-
-<style>
-   
-   ul {
-   	list-style-type: none;
-   }
-
-</style>
+<%=  render 'shared/errors', obj: @article  %><!-- this is how you swich what an object is called LOL -->
 <div class="row">
 	<div class="col-xs-12">
 <%=form_for(@article, :html => {class: "form-horizontal", role: "form"}) do |f| %><!--space inbetween form_for & @article actually caused an issue-->

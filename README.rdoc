@@ -152,6 +152,8 @@ Please feel free to use a different markup language if you do not plan to run
 
         the way to puts a bootstrap class into embedded ruby is by putting class: "whatever class"
         placeholder: title ...... allows you to put the title of the bootstrap within the embeded ruby 
+
+        inorder for any changes to actually hit the database you have to SAVE the new thing
 #
 #
 #

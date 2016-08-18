@@ -16,10 +16,10 @@ class ArticlesController  < ApplicationController
 	def create 
 		@article = Article.new(article_params)
 		if @article.save 
-		flash[:notice] = "Congrats, your article was succefully saved"
+		flash[:success] = "Congrats, your article was succefully saved"
 		redirect_to article_path(@article)
 		else 
-		flash[:error] = "The article was not able to be saved"
+		flash[:danger] = "The article was not able to be saved"
 		render 'new' 
 	end
 end
@@ -27,10 +27,10 @@ end
 def update
 	
 	if @article.update(article_params)
-		flash[:notice] = "Congrats, your article was successfully updated"
+		flash[:success] = "Congrats, your article was successfully updated"
 		redirect_to article_path(@article) 
 	else 
-		flash[:notice] = "Error, your article, was not updates for the following errors.."
+		flash[:danger] = "Error, your article, was not updates for the following errors.."
 		render 'edit'
 	end 
 end
@@ -41,7 +41,7 @@ end
 
 	def destroy 
 		@article.destroy 
-		flash[:notice] = "Article was successfully destroyed"
+		flash[:danger] = "Article was successfully destroyed"
 		redirect_to articles_path
 	end
 
