@@ -161,6 +161,12 @@ Please feel free to use a different markup language if you do not plan to run
         'git branch'  shows you the branches and the one your in
         the way to switch into another branch is with 'git checkout 'name'' checks you INTO the one you said 
         the way to merge is with 'git merge 'name'' merges the name you said with the one your in
+
+        BEBUGGER 
+        when you add the word debugger to a controller , it pauses the server when there is an error and in the termianl tells you the error 
+        to exit from the debugger in the terminal put Control D
+
+        this is in the layouts/application .. its for the debuger to show on every page .. "<%= debug(params) if Rails.env.development? %> " study it!!
 #
 
 
