@@ -154,7 +154,16 @@ Please feel free to use a different markup language if you do not plan to run
         placeholder: title ...... allows you to put the title of the bootstrap within the embeded ruby 
 
         inorder for any changes to actually hit the database you have to SAVE the new thing
+
+        GIT HUB STUFF 
+
+        the way to create a new branch is with "git checkout -b 'name'"
+        'git branch'  shows you the branches and the one your in
+        the way to switch into another branch is with 'git checkout 'name'' checks you INTO the one you said 
+        the way to merge is with 'git merge 'name'' merges the name you said with the one your in
 #
+
+
 #
 #
 #
